@@ -1,4 +1,4 @@
-package delivery
+package http
 
 import (
 	"fmt"
@@ -15,5 +15,8 @@ func NewUserController() *UserController {
 func (u *UserController) Login(ctx *gin.Context) {
 	fmt.Println("Hello World")
 	// Handle the request
-	ctx.String(http.StatusOK, "Hello, World!")
+	data := map[string]string{
+		"message": "Hello World",
+	}
+	ctx.JSON(http.StatusOK, data)
 }
