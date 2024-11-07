@@ -1,0 +1,9 @@
+{
+  "app": {
+    "name":"golang-templates-projects"
+  },
+  "web": {
+    "host": "localhost",
+    "port" : "8080"
+  }
+}
